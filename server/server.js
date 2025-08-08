@@ -20,7 +20,7 @@ await connectDB()
 await connectCloudinary()
 
 // Allow multiple origins
-const allowedOrigins = ['http://localhost:5174', 'https://quick-delivery-cpx3.vercel.app']
+const allowedOrigins = ['http://localhost:5174', 'https://quick-delivery-n7q8.vercel.app']
 
 // app.post('/stripe', express.raw({type: 'application/json'}), stripeWebhooks)
 
@@ -41,3 +41,4 @@ app.use('/api/order', orderRouter)
 app.listen(port, ()=>{
     console.log(`Server is running on http://localhost:${port}`)
 })
+
