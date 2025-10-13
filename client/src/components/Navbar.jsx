@@ -35,7 +35,7 @@ const Navbar = () => {
 
       <NavLink to='/' onClick={()=> setOpen(false)}>
         {/* <img className="h-9" src={assets.logo} alt="logo" /> */}
-        <span>QuickDelivery</span>
+        <h2 className="text-2xl font-bold text-p">Quick Delivery</h2>
       </NavLink>
 
       <div className="hidden sm:flex items-center gap-8">

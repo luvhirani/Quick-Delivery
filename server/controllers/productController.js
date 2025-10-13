@@ -8,7 +8,7 @@ export const addProduct = async (req, res)=>{
         console.log("productData:",productData)
 
         const images = req.files
-        console.log("images:",images)
+        // console.log("images:",images)
 
         let imagesUrl = await Promise.all(
             images.map(async (item)=>{
@@ -30,7 +30,7 @@ export const addProduct = async (req, res)=>{
 
 // Get Product : /api/product/list
 export const productList = async (req, res)=>{
-    console.log("listtt")
+    
     try {
         const products = await Product.find({})
         res.json({success: true, products})
